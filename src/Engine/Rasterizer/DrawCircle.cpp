@@ -34,20 +34,9 @@ namespace Rasterizer
 	{
 	}
 
-	void DrawFilledCircle2(const AEVec2& center,float radius,const Color& colorInner,const Color& colorOuter)
+	void DrawFilledCircle(const AEVec2& center, float radius, const Color& color1, const Color& color2, const Color& color3, const Color& color4)
 	{
 	}
-
-	void DrawFilledCircle(
-		const AEVec2& center,
-		float radius,
-		const Color& colorTL,
-		const Color& colorTR,
-		const Color& colorBL,
-		const Color& colorBR)
-	{
-	}
-
 
 	EDrawCircleMethod GetDrawCircleMethod()
 	{
