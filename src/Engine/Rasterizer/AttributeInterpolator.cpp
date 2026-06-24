@@ -10,7 +10,7 @@ namespace Rasterizer
 
     bool AttributeInterpolator::Evaluate(float x, float y)
     {
-  
+        return false;
     }
 
     float* AttributeInterpolator::GetCurrentValues()

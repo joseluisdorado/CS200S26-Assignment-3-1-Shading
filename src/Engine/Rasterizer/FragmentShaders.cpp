@@ -10,6 +10,7 @@ namespace Rasterizer
 	/// \brief	Returns the fragment color.  
 	Color FShaderColor(const FragmentInput& fragData)
 	{
+		return {};
 	}
 
 	// TODO
@@ -18,6 +19,7 @@ namespace Rasterizer
 	/// \brief	Returns the fragment inverse color.  
 	Color FShaderColorInv(const FragmentInput& fragData)
 	{
+		return {};
 	}
 
 
@@ -28,6 +30,7 @@ namespace Rasterizer
 	///			of the fragment color (RGBA) and the frame buffer color (RGB).
 	Color FShaderAlphaBlend(const FragmentInput& fragData)
 	{
+		return {};
 	}
 
 } // namespace Ratsterizer
