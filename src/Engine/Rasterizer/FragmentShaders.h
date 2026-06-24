@@ -20,18 +20,14 @@ namespace Rasterizer
 	// ------------------------------------------------------------------------
 	/// \fn		FSFragmentColor
 	/// \brief	Returns the fragment color.  
-	///	\param	fragData representing the fragment input. 
-	///	\param	userData	Data specific to the shader. Expected to be NULL
+	///	\param	FragmentInput representing the fragment input. 
 	Color FShaderColor(const FragmentInput& fragData);
 
 	/// TODO
 	// ------------------------------------------------------------------------
 	/// \fn		FSFragmentColorInv
 	/// \brief	Returns the fragment inverse color
-	///	\param	fragData float array representing the fragment. The memory
-	///			layout of this array is expected to match the one of 
-	///			Raterizer::VertexDefs::VtxPosColor.  
-	///	\param	userData	Data specific to the shader. Expected to be NULL
+	///	\param	FragmentInput representing the fragment input. 
 	Color FShaderColorInv(const FragmentInput& fragData);
 		
 

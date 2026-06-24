@@ -89,16 +89,9 @@ namespace Rasterizer
 	/// -----------------------------------------------------------------------
 	/// \fn		DrawTriangleShaded
 	/// \brief	Draws a triangle using the AttributeInterpolator class defined
-	///			above. The traversal method should be Topleft and the 
-	///			interpolation method should be the plane normal method. 
-	///			(note: this is implemented via the AttributeInterpolator class)
-	///			Additionally, this function determines the fragment color to 
-	///			write to the frame buffer using the shader function provided
-	///			and then blends it with the current color in the frame buffer.
-	///			(Note: You should use FrameBuffer::GetPixel(x,y) to retrieve 
-	///			the pixel color in the frame buffer at pixel position (x, y)
-	/// \param	vertices	-> 3 vertices provided into float array.
-	/// \param	vertexSize	-> number of float elements in the vertex (includes x,y)
-	/// \param	shaderFunction		-> shader function to call.
-		void DrawTriangleShaded(const float* vertices, const unsigned int& vertexSize, ShaderFunc shader);
+	///			in class. The method must calculate the bouding box, call the attribute inteprolator and set the color using the shader  
+	/// \param	vertices		 3 vertices provided into float array.
+	/// \param	vertexSize		 number of float elements in the vertex (includes x,y)
+	/// \param	shaderFunction	 shader function to call.
+	void DrawTriangleShaded(const float* vertices, const unsigned int& vertexSize, ShaderFunc shader);
 }
